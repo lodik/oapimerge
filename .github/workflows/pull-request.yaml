@@ -1,0 +1,17 @@
+name: Validate pr
+
+on:
+  pull_request
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set up JDK
+        uses: olafurpg/setup-scala@v10
+        with:
+          java-version: adopt@1.11
+      - name: build
+        run: sbt "^compile; test"
