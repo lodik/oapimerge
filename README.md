@@ -1,6 +1,6 @@
-# Oapmerge
+# Oapimerge
 
-Simple cli for merging multiple open api schemas into one.
+Simple command line utility for merging multiple open api schemas into one.
 
 # Usage
 
